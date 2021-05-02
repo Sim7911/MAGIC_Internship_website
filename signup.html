@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIGN UP</title>
+	<!-- Bootstrap -->
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/style1.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="CSS/animate.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- Font Awesome Ends -->
+</head>
+<body>
+	<div id="sign" class="sign">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12 col-sm-12">
+					<!-- form starts -->
+					<h2>REGISTER</h2>
+					<form name="signup" action="process.php" method="post">
+						<!-- First NAME -->
+						<div class="input-group input-group-md">
+							<span class="input-group-addon" id="sizing-addon1"><i class="fas fa-user-circle"></i></span>
+							<input class="form-control" aria-describedby="sizing-addon1" type="text" placeholder="First Name" name="fname" required>
+						</div>
+						<br>
+						<!-- Last Name -->
+						<div class="input-group input-group-md">
+							<span class="input-group-addon" id="sizing-addon1"><i class="fas fa-user-circle"></i></span>
+							<input class="form-control" aria-describedby="sizing-addon1" type="text" placeholder="Last Name" name="lname" required>
+						</div>
+						<br>
+						<!-- Email -->
+						<div class="input-group input-group-md">
+							<span class="input-group-addon" id="sizing-addon1"><i class="fas fa-user-circle"></i></span>
+							<input class="form-control" aria-describedby="sizing-addon1" type="email" placeholder="Enter Email ID" name="email" required>
+						</div>
+						<br>
+						<!-- Phone -->
+						<div class="input-group input-group-md">
+							<span class="input-group-addon" id="sizing-addon1"><i class="fas fa-user-circle"></i></span>
+							<input class="form-control" aria-describedby="sizing-addon1" type="text" maxlength="10" placeholder="Phone Number" name="phone" required>
+						</div>
+						<br>
+						<!-- Address -->
+						<div class="input-group input-group-md">
+						<!-- Pin COde -->
+									<input class="form-control" aria-describedby="sizing-addon1" type="text" placeholder="Enter PinCode" maxlength="6" name="pin" required>
+									<br>
+									<!-- State -->
+									<input class="form-control" aria-describedby="sizing-addon1" type="text" placeholder="State" name="state" required>
+									<br>
+									<!-- Country -->
+									<select name="country" class="input-group-addon form-control" id="sizing-addon1" aria-describedby="sizing-addon1">
+										<option VALUE="india">INDIA</option>
+										<option VALUE="USA">USA</option>
+										<option VALUE="JAPAN">JAPAN</option>
+										<option VALUE="PAKISTAN">PAKISTAN</option>
+									</select>
+									<br>
+									<!-- FULL ADDRESS -->
+									<div class="input-group">
+										<textarea name="address" id="addr" cols="80" rows="8" class="form-control"></textarea>
+									</div>
+						</div>
+						<br>
+						<!-- UserName -->
+						<div class="input-group input-group-md">
+							<span class="input-group-addon" id="sizing-addon1"><i class="fas fa-user-circle"></i></span>
+							<input class="form-control" aria-describedby="sizing-addon1" type="text" placeholder="UserName" name="username" required>
+						</div>
+						<br>
+						<!-- Password -->
+						<div class="input-group input-group-md">
+							<span class="input-group-addon" id="sizing-addon1"><i class="fas fa-user-circle"></i></span>
+							<input class="form-control" aria-describedby="sizing-addon1" type="password" placeholder="Password" name="Password" maxlength="10" required>
+						</div>
+						<br>
+						<input type="checkbox" name="check">I agree to the MOM <a href="@">Terms of Service</a> and <a href="#">Privacy Policy</a>
+						<br>
+						
+						<input class="btn btn-md" type="submit" value="submit" name="submit">	
+					</form>
+					<!-- form ends -->
+				</div>
+				<div class="col-lg-6 col-sm-12 col-md-12">
+					<img src="images/logo1.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!-- jQuery Plugins -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+</body>
+</html>
